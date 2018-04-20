@@ -1,0 +1,59 @@
+{
+  "name": "bitcore-payment-protocol-zula",
+  "version": "1.2.1",
+  "description": "Payment Protocol (BIP70 and related) support for bitcore-zula",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp",
+    "rootcerts": "node ./update-rootcerts.js"
+  },
+  "contributors": [
+    {
+      "name": "Christopher Jeffrey",
+      "email": "chjeffrey@gmail.com"
+    },
+    {
+      "name": "Manuel Araoz",
+      "email": "manuelaraoz@gmail.com"
+    },
+    {
+      "name": "Ryan X. Charles",
+      "email": "ryan@bitpay.com"
+    },
+    {
+      "name": "Linus Unnebäck",
+      "email": "linus@folkdatorn.se"
+    },
+    {
+      "name": "Esteban Ordano",
+      "email": "eordano@gmail.com"
+    }
+  ],
+  "keywords": [
+    "zula",
+    "bitcore-zula"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuladev/bitcore-payment-protocol-zula.git"
+  },
+  "browser": "lib/browser.js",
+  "dependencies": {
+    "asn1.js": "=4.5.2",
+    "bitcore-lib-zula": "zuladev/bitcore-lib-zula",
+    "jsrsasign": "=5.0.10",
+    "protobufjs": "=5.0.1"
+  },
+  "devDependencies": {
+    "bitcore-build-zula": "zuladev/bitcore-build-zula",
+    "brfs": "^1.2.0",
+    "chai": "~1.10.0",
+    "gulp": "^3.8.10",
+    "sinon": "^1.17.3"
+  },
+  "license": "MIT"
+}
